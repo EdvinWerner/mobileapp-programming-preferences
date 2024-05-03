@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -26,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         ToSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Activty2.class);
+                Intent intent;
+                intent = new Intent(MainActivity.this, Activty2.class);
                 startActivity(intent);
             }
         });
